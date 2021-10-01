@@ -1,0 +1,11 @@
+:: example1.bat
+:: Wyświetlenie napisu typu "Witaj Świecie".
+
+:: example2.bat
+:: Wyświetlenie wpisanej zmiennej.
+
+:: example3.bat
+:: Możliwość wybrania jednej opcji z dwóch.
+
+:: example4.bat
+:: Kalkulator sumy.
