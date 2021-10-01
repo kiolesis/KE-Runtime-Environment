@@ -1,0 +1,3 @@
+ÿþ&cls
+if "%tools%"=="NIE" exit/b
+echo SkÅ‚adnik w przygotowaniu!

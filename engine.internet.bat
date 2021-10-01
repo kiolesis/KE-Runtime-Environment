@@ -1,0 +1,2 @@
+ÿş&cls
+set internet=TAK

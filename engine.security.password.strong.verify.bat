@@ -1,0 +1,3 @@
+ÿþ&cls
+if "%security%"=="NIE" exit/b
+echo %~1 - HasÅ‚o powinno byÄ‡ dobre

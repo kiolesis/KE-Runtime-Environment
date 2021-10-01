@@ -1,0 +1,5 @@
+ÿþ&cls
+if "%diagnostics%"=="NIE" exit/b
+echo Zbierane dane diagnostyczne to:
+echo -ostatni kod bÅ‚Ä™du
+echo -data i godzina

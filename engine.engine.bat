@@ -1,0 +1,26 @@
+ÿþ&cls
+setlocal enabledelayedexpansion
+set console.code=NIE
+set codepage=NIE
+set console.write=NIE
+set exit.errorlevel=NIE
+set timeout=NIE
+set function=NIE
+set internet=NIE
+set time.zone=NIE
+set int=NIE
+set math=NIE
+set security=NIE
+set if_stack=NIE
+set tools=NIE
+set debug=NIE
+set KE.stack=NIE
+set system_file=NIE
+set user=NIE
+set mods=NIE
+set mods.internet=NIE
+set mods.if_stack=NIE
+set mods.system_file=NIE
+set interaction=NIE
+set diagnostics=NIE
+set lokalizacjake=%cd%

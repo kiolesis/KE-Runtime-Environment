@@ -1,0 +1,3 @@
+ÿþ&cls
+if "%security%"=="NIE" exit/b
+echo BÄ™dzie aktualizacja dot. bezpieczeÅ„stwa Å›rodowiska Kiolesis Engine.

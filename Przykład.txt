@@ -1,0 +1,13 @@
+:: Załadowanie ścieżki do środowiska:
+cd "C:\KiolEngine"
+
+:: Ukrycie wyświetlanej składni na ekranie:
+call engine.hide.write.n
+
+:: Załadowanie wszystkich dostępnych bibliotek:
+call load.engine&&call load.console.code&&call load.codepage&&call load.console.write&&call load.exit.errorlevel&&call load.timeout
+call load.function&&call load.internet&&call load.time.zone&&call load.int&&call load.math
+call load.system_file&&call load.interaction&&call load.user&&call load.mods&&call engine.mods.internet&&call engine.mods.if_stack
+call engine.mods.system_file&&call load.security&&call load.if_stack&&call load.tools&&call load.debug&&call load.KE.stack
+
+:: Kod programu:

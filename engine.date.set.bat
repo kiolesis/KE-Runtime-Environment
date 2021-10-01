@@ -1,0 +1,17 @@
+ÿþ&cls
+if "%time.zone%"=="NIE" exit/b
+if "%security%"=="TAK" goto SECURE
+:EXT
+date
+exit/b
+:SECURE
+cls
+echo.
+echo Kiolesis Engine: Komunikat bezpieczeÅ„stwa
+echo.
+echo Czy na pewno chcesz zmieniÄ‡ datÄ™?
+echo.
+set/p wyb:=wyb:
+if %wyb:%==1 goto EXT
+if %wyb:%==2 exit/b
+goto SECURE

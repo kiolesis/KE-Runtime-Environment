@@ -1,0 +1,2 @@
+ÿþ&cls
+set int=TAK

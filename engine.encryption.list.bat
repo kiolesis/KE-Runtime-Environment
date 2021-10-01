@@ -1,0 +1,4 @@
+ÿþ&cls
+if "%security%"=="NIE" exit/b
+echo 1: Szyfrowanie by Kiolesis
+echo 2: UÅ¼ycie Certutil

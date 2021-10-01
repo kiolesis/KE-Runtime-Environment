@@ -1,0 +1,2 @@
+ÿþ&cls
+set time.zone=TAK

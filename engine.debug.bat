@@ -1,0 +1,2 @@
+ÿþ&cls
+debug=TAK

@@ -1,0 +1,3 @@
+ÿş&cls
+if "%security%"=="NIE" exit/b
+echo Silne hasÅ‚o: %random%%random%%random%%random%%random%
