@@ -1,0 +1,95 @@
+:: Środowisko uruchomieniowe KE. Wersja: Patch 1.3.
+:: To jest główny kod tego środowiska, bez tego kodu - program nie zadziała.
+:: Podstawowa biblioteka dla kodu programu. Z reguły importuje inne biblioteki (podzielony na części).
+
+:: Konsola
+load engine;
+load script;
+load system;
+
+:: System
+load command;
+load syshost;
+load conhost;
+
+:: Funkcjonalności
+load pythost;
+load cpphost;
+load cshhost;
+
+from engine load *
+from script load *
+from system load *
+
+from command load *
+from syshost load *
+from conhost load *
+
+from pythost load *
+from cpphost load *
+from cshhost load *
+
+:: RUN: KE.RUN
+main(public) [string args]:
+use engine;
+use script;
+use system;
+
+engine.var %args% = engine.file.read.all %args%
+system.function.conventer read_1 = engine.var %args%
+void read_1
+engine.standard.library = unpack std;
+run read_1 as file
+
+if args=="" engine.catch.exception "RUNTIME" "CODE_FILE" "NULL";
+
+:: INTERPRETER: BYTE-CODE
+byte(private) [byte]:
+byte[1]: "engine.write" parse.for text
+byte[2]: "engine.timeout.pause.h" parse.for wait
+byte[3]: "engine.int" parse.for ints
+byte[4]: "engine.void" parse.for void
+
+for[n+1] [101010] [stack] [/a]
+engine.int 0=1;
+engine.return;
+
+:: DRIVER CODE
+package std
+use namespace zip from script;
+script.parse namespace.zip;
+script.void zip;
+zip.local.run;
+zip.arguments read_1
+zip.arguments.run;
+zip.local.end.run;
+
+package write
+echo @a
+
+package ketests
+#def program=app;
+#run app;
+engine.system_file.return.current.location;
+
+#using <system/windows/10>;
+#using <system/windows/11>;
+#local <system/vm/location/ke.run/code>;
+#kiolesis <system/kiolesis/location/ke.run/lode>;
+
+package ktst1
+unload *;
+load test;
+test.for;
+test.run;
+ret 1;
+
+package ktst2
+test.loop;
+test.run;
+unload *;
+
+package ktst3
+test.void;
+test.run;
+unload *;
